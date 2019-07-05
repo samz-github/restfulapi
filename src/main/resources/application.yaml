@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://xx.xx.xx.xx:3306/demo
+    username: username
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:/*Mapper.xml
+  type-aliases-package: com.sam.model

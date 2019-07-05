@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace = "com.sam.dao.CloudServerDao">
+
+    <resultMap id = "baseResultMap" type = "CloudServer">
+        <result property = "physicalSubsystem" column = "physical_subsystem"/>
+        <result property = "systemDisk" column = "system_disk"/>
+        <result property = "dataDisk" column = "data_disk"/>
+        <result property = "contactName" column = "contact_name"/>
+        <result property = "contactPhone" column = "contact_phone"/>
+    </resultMap>
+
+    <select id = "findAll" resultMap = "baseResultMap">
+      SELECT *  FROM cloud_server
+    </select>
+
+</mapper>
+
